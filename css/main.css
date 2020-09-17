@@ -1,0 +1,460 @@
+/* Made by Jinhyuk Yoon*/
+/* Font import */
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans');
+@import url('https://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+@font-face {
+  font-family: "San Francisco";
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+@media only screen and (max-width: 768px) {
+  #mainNav {
+    max-height: fit-content;
+  }
+ /* And we even need to overwrite the overflow property*/
+  .navbar-collapse.in {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+}
+
+p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'San Francisco', sans-serif;
+}
+
+.korean {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.navbar {
+  height: 150px;
+  background-color: rgba(255,255,255,1.0);
+}
+
+.navbar-bottom {
+  height: 100px;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
+
+.nav-item {
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-left: 15px;
+  z-index: 1030;
+}
+
+.no-transition {
+  -webkit-transition: height 0.01s;
+  -moz-transition: height 0.01s;
+  -ms-transition: height 0.01s;
+  -o-transition: height 0.01s;
+  transition: height 0.01s;
+}
+
+@media (max-width: 993px) {
+  .navbar-nav.ml-auto {
+    margin-left: -1px !important;
+  }
+
+  .nav-item {
+    padding-left: 15px;
+    margin-left: -15px;
+    margin-right: -20px;
+    background-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .nav-item.top {
+    border-top-color: gray;
+    border-top-style: solid;
+    border-top-width: 2px;
+  }
+
+  .nav-item.bottom {
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+  }
+}
+
+.container.top-bg {
+  height: 300px;
+  padding-top: 100px;
+  max-width: 100%;
+  display: block;
+  padding-bottom: 450px;
+}
+
+.top-bg {
+  height: 400px;
+  max-width: 100%;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: block;
+}
+
+.top-bg.col-md-12 {
+  padding: 0;
+}
+
+.top-bg-caption {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.top-bg-caption h1 {
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+  height: 400px;
+  font-size: 70px;
+}
+
+/*index style*/
+.container-carousel {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.carousel-item {
+  height: 800px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  right: 5%;
+  left: 5%;
+}
+
+.index {
+  max-width: 700px;
+  margin: auto;
+}
+
+.container.index {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.index.quote {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.index.contents {
+  padding-top: 20px;
+  text-align: right;
+  font-size: 15px;
+}
+
+/*menu style*/
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 27px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    padding-top: 30px;
+  }
+}
+
+.faculty>h2 {
+  max-width: auto;
+  display: inline-block;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.faculty>h3 {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.publication>h3 {
+  border-bottom-style: solid;
+  border-bottom-width: 1.5px;
+  border-bottom-color: #66665c;
+  margin-top: 10px;
+  margin-right: -9%;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 1317px) {
+  .publication>h3 {
+    margin-right: -15%;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .publication>h3 {
+    margin-right: 0.5%;
+  }
+}
+
+.publication strong {
+  font-size: 17px;
+}
+
+.publication.patent strong {
+  font-size: 17px;
+}
+
+.patent strong {
+  font-size: 18px;
+}
+
+.padding {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.patent>.padding {
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+}
+
+.alumni>.padding {
+  padding-bottom: 30px;
+}
+
+
+.row-top {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.row-contents {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.menu {
+  text-align: left;
+  line-height: 40px;
+  padding-bottom: 20px;
+  background-color: #f8f9fa;
+  max-width: 250px;
+  margin-right: 75px;
+}
+
+@media (max-width: 1317px) {
+  .menu {
+    max-width: none;
+    margin-right: 0px;
+  }
+}
+
+.menu.about {
+  max-height: 85px;
+}
+
+.menu.people {
+  max-width: 250px;
+  max-height: 85px;
+}
+
+.menu.research {
+  max-width: 300px;
+  max-height: 180px;
+}
+
+.menu.publication {
+  max-width: 300px;
+  max-height: 210px;
+}
+
+@media (max-width: 989px) {
+  .menu.people {
+    max-height: 180px;
+  }
+}
+
+.menu a {
+  color: #66665c;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: black;
+}
+
+.menu>.active {
+  color: black;
+}
+
+.img-people {
+  border: none;
+  width: 150px;
+  height: auto;
+}
+
+.img-partner {
+  width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.img-fluid {
+  padding-bottom: 30px;
+}
+
+
+@media (max-width: 991px) {
+  .col-lg-9.text {
+    padding-top: 20px;
+  }
+}
+
+.contents a {
+  color: black;
+  text-decoration: none;
+}
+
+.contents a:hover {
+  color: #66665c;
+}
+
+.contents p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.contents.about p, .contents.research p {
+  font-size: 20px;
+}
+
+.row.contents {
+  padding-bottom: 70px;
+}
+
+.row.contents.faculty {
+  padding-bottom: 40px;
+}
+
+.row.contents.alumni {
+  padding-bottom: 40px;
+}
+
+.row.contents.alumni strong {
+  padding-right: 10px;
+}
+
+.contents.alumni h2 {
+  padding-bottom: 10px;
+}
+
+.description {
+  font-size: 17px;
+}
+
+.about> .description {
+  text-align: justify;
+}
+
+.career strong {
+  font-size: 18px;
+}
+
+.career h2 {
+  font-size: 32px;
+}
+
+.career h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.career>.description.padding-left {
+  padding-left: 15px;
+}
+
+
+.page-footer, .page-footer a {
+  background-color: black;
+  color: white;
+}
+
+.page-footer>.container {
+  padding-top: 30px;
+  height: 360px;
+}
+
+@media (max-width: 991px) {
+  .page-footer>.container {
+    height: 450px;
+  }
+}
+
+@media (max-width: 515px) {
+  .page-footer>.container {
+    height: 480px;
+  }
+}
+
+.page-footer p {
+  padding-top: 10px;
+  text-align: left;
+}
+
+.page-footer-navigation {
+  text-align: left;
+  line-height: 40px;
+  padding-bottom: 20px;
+}
